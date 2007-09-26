@@ -13,11 +13,11 @@ update(Node, N, History) ->
     case lists:keysearch(Node, 1, History) of
 	{value, {CityName, Count}} ->
 	    if N < Count ->
-                old;
+                    old;
                N >= Count ->
-                lists:keyreplace(CityName,1,History,{CityName,N})
+                    {new,lists:keyreplace(CityName,1,History,{CityName,N})}
             end;            
 	false ->
-	    notfound
+	    {new,[{Node,N}|History]}
     end.
 

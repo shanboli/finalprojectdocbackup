@@ -47,7 +47,7 @@ iterate([{_Node, inf, _}|_], _Map, Table) ->
 iterate([{Node, N, Gw}|Nodes], Map, Table) ->
     Reachable = map:reachable(Node, Map),
     Updated = lists:foldl(fun(Nd, Acc) ->
-             update(Nd, Gw, N+1, Acc) end, Nodes, Reachable),
+                                  update(Nd, Gw, N+1, Acc) end, Nodes, Reachable),
     iterate(Updated, Map, [{Node, Gw}|Table]).
 
 
@@ -69,7 +69,7 @@ entry(Node, Nodes) ->
 	    M;
 	false  ->
 	    0
-end.
+    end.
 
 replace(Node, N, Gw, Nodes) ->
     insert({Node, N, Gw}, lists:keydelete(Node, 1, Nodes)).
