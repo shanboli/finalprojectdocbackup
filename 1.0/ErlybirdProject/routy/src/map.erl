@@ -19,7 +19,7 @@
 %% map() will generate an empty map
 
 new() ->
-     [].
+    [].
 
 %% update(Node, Links, Map) will update the Map given a new
 %% set of links reachable from a node.
