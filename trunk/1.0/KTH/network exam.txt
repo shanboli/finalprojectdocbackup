@@ -1,0 +1,30 @@
+true false
+true就写true，
+false，写错误原因，或写正确的论断。
+
+tcp and udp compare
+
+what is socket?
+
+what is rmi?
+use for?
+come from?
+
+JMS concept
+
+java me:
+capebility configration:
+3 package:
+io
+util
+
+interface command driven
+
+
+3tier:
+
+jsp:
+concept
+
+ejb: session ejb, message-driven ejb;
+
